@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :identicon, Identicon.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "mwas6190",
   hostname: "localhost",
   database: "identicon_dev",
   stacktrace: true,
