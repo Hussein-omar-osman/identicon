@@ -58,8 +58,4 @@ defmodule Identicon.ImageGenerator do
     :egd.render(image)
   end
 
-  # def save_image(image, input) do
-  #   File.write("#{input}.png", image)
-  # end
-
 end
