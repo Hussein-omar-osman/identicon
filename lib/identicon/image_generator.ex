@@ -11,10 +11,6 @@ defmodule Identicon.ImageGenerator do
   end
 
   def pick_color(image) do
-    # %Identicon.Image{hex: hex_list} = image
-    # [r, g, b | _tail] = hex_list
-    # [r, g, b]
-    # or you can do this
     %Image{hex: [r, g, b | _tail]} = image
     %Image{image | color: {r, g, b}}
   end
@@ -25,9 +21,7 @@ defmodule Identicon.ImageGenerator do
   end
 
   def mirror_row(row) do
-    # [134, 72, 200]
     [first, second | _tail] = row
-    # [134, 72, 200, 72, 134]
     row ++ [second , first]
   end
 
