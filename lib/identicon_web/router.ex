@@ -5,8 +5,9 @@ defmodule IdenticonWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", IdenticonWeb do
+  scope "/", IdenticonWeb do
     pipe_through :api
-    get "/", DefaultController, :index
+    get "/", ImageController, :image
+    get "/default", DefaultController, :index
   end
 end
