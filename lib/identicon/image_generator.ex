@@ -2,7 +2,7 @@ defmodule Identicon.ImageGenerator do
   alias Identicon.Image
 
    def main(input) do
-    input |> hash_input |> pick_color |> build_grid |> filter_odd_squares |> build_pixel_map |> draw_image |> save_image(input)
+    input |> hash_input |> pick_color |> build_grid |> filter_odd_squares |> build_pixel_map |> draw_image
   end
 
   def hash_input(input) do
@@ -58,8 +58,8 @@ defmodule Identicon.ImageGenerator do
     :egd.render(image)
   end
 
-  def save_image(image, input) do
-    File.write("#{input}.png", image)
-  end
+  # def save_image(image, input) do
+  #   File.write("#{input}.png", image)
+  # end
 
 end
