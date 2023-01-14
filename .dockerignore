@@ -1,0 +1,51 @@
+# flyctl launch added from .elixir_ls/.gitignore
+.elixir_ls/**/*
+
+# flyctl launch added from .gitignore
+# The directory Mix will write compiled artifacts to.
+_build
+
+# If you run "mix test --cover", coverage assets end up here.
+cover
+
+# The directory Mix downloads your dependencies sources to.
+deps
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+doc
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+**/erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+**/*.ez
+
+# Ignore package tarball (built via "mix hex.build").
+**/identicon-*.tar
+
+
+# flyctl launch added from deps/egd/.gitignore
+deps/egd/**/ebin
+deps/egd/**/log
+deps/egd/**/logs
+deps/egd/**/_build
+
+deps/egd/**/doc/specs
+deps/egd/**/doc/src/egd.xml
+deps/egd/**/doc/src/egd_ug.xml
+deps/egd/**/doc/src/ref_man.xml
+
+deps/egd/**/.rebar3
+deps/egd/**/_*
+deps/egd/**/*.o
+deps/egd/**/*.beam
+deps/egd/**/*.plt
+deps/egd/**/*.swp
+deps/egd/**/*.swo
+deps/egd/**/.erlang.cookie
+deps/egd/**/erl_crash.dump
+deps/egd/**/.rebar
+fly.toml
