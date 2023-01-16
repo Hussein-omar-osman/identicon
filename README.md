@@ -35,3 +35,35 @@ After testing the service, you can always reset the database to start all over a
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+### Endpoint
+
+One public endpoint as root `/`
+
+`GET` [`localhost:4000`](http://localhost:4000)
+
+Returns a randomly generated password.
+
+#### Parameter
+
+- `name`: Optional. Provide any name and get you own identicon image.
+
+#### Response
+
+Examples:
+
+Default:
+
+```elixir
+https://localhost:4000/?name=phoenixelixir
+
+```
+
+![Screenshot](screenshot.png)
+
+## Learn more
+
+- Official website: https://www.phoenixframework.org/
+- Guides: https://hexdocs.pm/phoenix/overview.html
+- Docs: https://hexdocs.pm/phoenix
+- Forum: https://elixirforum.com/c/phoenix-forum
+- Source: https://github.com/phoenixframework/phoenix
